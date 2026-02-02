@@ -18,3 +18,17 @@ Suspicious events are sent to an anonymous HuggingFace inference endpoint. The m
 • 	Possible MITRE ATT&CK technique mapping.  
 • 	Recommended next steps for a SOC analyst.  
 This transforms raw logs into actionable insights.
+## Python Libraries Used
+- **json**  
+To read and write JSON data.  
+To load the Suricata JSON file and to pretty‑print context for the AI.
+- **re**  
+Regular expression module.   
+To parse unstructured text logs (auth.log, access.log) into structured fields.
+- **pandas**  
+A data analysis library.  
+Used to store logs in DataFrames, group them, filter them, and count events.  
+- **time**  
+Python module for time related functions.  
+- **request**  
+For making HTTP requests.  
