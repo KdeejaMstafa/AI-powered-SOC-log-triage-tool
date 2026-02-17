@@ -1,0 +1,526 @@
+Analysing event 1 from suricata..
+Analysing event 2 from suricata..
+Analysing event 3 from suricata..
+Analysing event 4 from suricata..
+Analysing event 5 from suricata..
+Analysing event 6 from suricata..
+Analysing event 7 from auth..
+Analysing event 8 from auth..
+Analysing event 9 from auth..
+Analysing event 10 from auth..
+Analysing event 11 from auth..
+Analysing event 12 from auth..
+Analysing event 13 from auth..
+Analysing event 14 from auth..
+Analysing event 15 from access..
+Analysing event 16 from access..
+Analysing event 17 from access..
+Analysing event 18 from access..
+Analysing event 19 from access..
+Analysing event 20 from access..
+Analysing event 21 from access..
+Analysing event 22 from access..
+================================================================================
+Event ID: 1
+Source: suricata
+
+AI Analysis:
+
+Summary:
+A potential SSH scan was detected by Suricata, indicating a possible attempt to identify open SSH ports on a network. This activity may be a precursor to a larger attack. The source IP is unknown.
+
+Why the activity is suspicious:
+The detection of a potential SSH scan suggests that an attacker may be attempting to identify vulnerable systems on the network. This activity can be a precursor to a brute-force attack or other malicious activity. The unknown source IP adds to the suspicious nature of the activity.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Investigate the source IP to determine its origin and potential malicious intent.
+- Review the network logs for any subsequent activity related to the detected SSH scan.
+- Implement additional security measures to protect against brute-force attacks on SSH services.
+- Consider blocking the source IP to prevent further potential attacks.
+
+
+================================================================================
+Event ID: 2
+Source: suricata
+
+AI Analysis:
+
+Summary:
+A Suricata alert was triggered due to traffic from a known Tor relay/router node. This node is not an exit node, indicating it's part of the Tor network but not directly connected to the internet. The traffic is being sent to an internal IP address.
+
+Why the activity is suspicious:
+The traffic from a known Tor relay/router node may indicate an attempt to use the Tor network for malicious purposes, such as anonymizing malicious activity or communicating with other malicious nodes. This could be a sign of a potential threat to the internal network. The fact that the traffic is being sent to an internal IP address suggests that the node may be attempting to establish a connection with an internal system.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Investigate the source IP address (88.99.217.110) to determine its origin and potential connection to the internal network.
+- Review the internal IP address (10.47.43.10) to determine if it's a legitimate system or a potential entry point for malicious activity.
+- Check the network logs for any other suspicious activity related to the Tor network.
+- Consider blocking traffic from known Tor relay/router nodes to prevent potential threats.
+
+
+================================================================================
+Event ID: 3
+Source: suricata
+
+AI Analysis:
+
+Summary:
+A Suricata alert was triggered due to traffic from a known Tor relay/router node. This node is not an exit node, indicating it's part of the Tor network but not directly connected to the internet. The traffic is being sent to an internal IP address.
+
+Why the activity is suspicious:
+The traffic from a known Tor relay/router node may indicate an attempt to use the Tor network for malicious purposes, such as anonymizing malicious activity or communicating with other malicious nodes. This could be a sign of a potential threat to the internal network. The fact that the traffic is being sent to an internal IP address suggests that the node may be attempting to establish a connection with an internal system.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Investigate the source IP address (88.99.70.107) to determine its origin and potential connection to the internal network.
+- Review the internal IP address (10.47.44.10) to determine if it's a legitimate system or a potential entry point for malicious activity.
+- Monitor the network traffic for any further connections from the known Tor relay/router node.
+- Consider blocking the known Tor relay/router node at the network perimeter to prevent potential malicious activity.
+
+
+================================================================================
+Event ID: 4
+Source: suricata
+
+AI Analysis:
+
+Summary:
+A Suricata alert was triggered due to traffic from a known Tor relay/router node. This node is not an exit node, indicating it's part of the Tor network but not directly connected to the internet. The traffic is being sent to an internal IP address.
+
+Why the activity is suspicious:
+The traffic from a known Tor relay/router node may indicate an attempt to use the Tor network for malicious purposes, such as anonymizing malicious activity or communicating with other malicious nodes. This could be a sign of a potential threat to the internal network. The fact that the traffic is being sent to an internal IP address suggests that the node may be attempting to establish a connection with an internal system.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Investigate the internal IP address receiving the traffic to determine if it's a legitimate system or a potential entry point for malicious activity.
+- Review the network logs to determine if this is an isolated incident or part of a larger pattern of suspicious activity.
+- Consider blocking traffic from known Tor relay/router nodes to prevent potential threats.
+- Monitor the system receiving the traffic for any signs of malicious activity.
+
+
+================================================================================
+Event ID: 5
+Source: suricata
+
+AI Analysis:
+
+Summary:
+A Suricata alert was triggered due to traffic from a known Tor relay/router node. This node is not an exit node, indicating it's part of the Tor network but not directly connected to the internet. The traffic is being sent to an internal IP address.
+
+Why the activity is suspicious:
+The traffic from a known Tor relay/router node may indicate an attempt to use the Tor network for malicious purposes, such as anonymizing malicious activity or communicating with other malicious nodes. This could be a sign of a potential threat to the internal network. The fact that the traffic is being sent to an internal IP address suggests that the node may be attempting to establish a connection with an internal system.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Investigate the internal IP address receiving the traffic to determine if it's a legitimate system or a potential entry point for malicious activity.
+- Review the network logs to determine if this is an isolated incident or part of a larger pattern of suspicious activity.
+- Consider blocking traffic from known Tor relay/router nodes to prevent potential threats.
+- Monitor the system receiving the traffic for any signs of malicious activity.
+
+
+================================================================================
+Event ID: 6
+Source: suricata
+
+AI Analysis:
+
+Summary:
+A Suricata alert was triggered due to traffic from a known Tor relay/router node. This node is not an exit node, indicating it's part of the Tor network but not directly connected to the internet. The traffic is being sent to an internal IP address.
+
+Why the activity is suspicious:
+The traffic from a known Tor relay/router node may indicate an attempt to use the Tor network for malicious purposes, such as anonymizing malicious activity or communicating with other malicious nodes. This could be a sign of a potential threat to the internal network. The fact that the traffic is being sent to an internal IP address suggests that the node may be attempting to establish a connection with an internal system.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Investigate the internal IP address receiving the traffic to determine if it's a legitimate system or a potential entry point for malicious activity.
+- Review the network logs to determine if this is an isolated incident or part of a larger pattern of suspicious activity.
+- Consider blocking traffic from known Tor relay/router nodes to prevent potential threats.
+- Monitor the system receiving the traffic for any signs of malicious activity.
+
+
+================================================================================
+Event ID: 7
+Source: auth
+
+AI Analysis:
+
+Summary:
+An SSH brute force attack is being attempted from IP address 185.199.110.22. The attacker is trying to gain access to the system by attempting to log in with invalid usernames. This activity is likely a malicious attempt to compromise the system.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves multiple failed login attempts from the same IP address within a short period of time. This behavior is commonly associated with brute force attacks. The attacker is trying to guess valid usernames, which is a clear indication of malicious intent.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 185.199.110.22 from accessing the system.
+- Implement rate limiting for SSH login attempts to prevent brute force attacks.
+- Monitor the system for any further suspicious activity.
+- Consider implementing a more secure authentication mechanism, such as two-factor authentication.
+
+
+================================================================================
+Event ID: 8
+Source: auth
+
+AI Analysis:
+
+Summary:
+An SSH brute force attack is being attempted from IP address 192.168.1.50. The attacker is trying to gain access to the system by attempting to log in with invalid usernames. This activity is likely a malicious attempt to compromise the system.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves multiple failed login attempts from the same IP address within a short period of time. This behavior is commonly associated with brute force attacks. The attacker is trying different usernames, which suggests a systematic approach to guessing valid credentials.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 192.168.1.50 from accessing the system.
+- Implement rate limiting for SSH login attempts to prevent brute force attacks.
+- Monitor the system for further suspicious activity.
+- Consider implementing a more secure authentication mechanism, such as two-factor authentication.
+
+
+================================================================================
+Event ID: 9
+Source: auth
+
+AI Analysis:
+
+Summary:
+An SSH brute force attack is being attempted from IP address 198.51.100.77. The attacker is trying to gain access to the system by attempting to log in with common usernames. This activity is likely a malicious attempt to compromise the system.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves multiple failed login attempts from the same IP address within a short period of time. This behavior is commonly associated with brute force attacks. The attacker is also trying to log in with common usernames, which suggests a lack of knowledge about the system's actual usernames. The fact that the same IP address is used for all attempts further indicates a coordinated attack.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 198.51.100.77 from accessing the system.
+- Implement rate limiting for SSH login attempts to prevent brute force attacks.
+- Monitor the system for any further suspicious activity.
+- Consider implementing a more secure authentication mechanism, such as two-factor authentication.
+
+
+================================================================================
+Event ID: 10
+Source: auth
+
+AI Analysis:
+
+Summary:
+An SSH brute force attack is being attempted from IP address 198.51.100.99. The attacker is trying to gain access to the system by attempting to log in with invalid usernames. This activity is likely a precursor to a more significant attack.
+
+Why the activity is suspicious:
+The repeated attempts to log in with invalid usernames from a single IP address indicate a brute force attack. This type of activity is often used to gain unauthorized access to a system. The attacker is likely using a script or tool to automate the login attempts.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 198.51.100.99 from accessing the system.
+- Implement rate limiting on SSH login attempts to prevent brute force attacks.
+- Monitor the system for any further suspicious activity.
+- Consider implementing a more secure authentication method, such as two-factor authentication.
+
+
+================================================================================
+Event ID: 11
+Source: auth
+
+AI Analysis:
+
+Summary:
+An SSH brute force attack is being attempted from IP address 203.0.113.10 against the Ubuntu system. The attacker is trying to gain access by attempting to log in with invalid usernames. This activity is likely a malicious attempt to compromise the system.
+
+Why the activity is suspicious:
+The repeated failed login attempts from the same IP address suggest a coordinated attack. The use of common usernames such as 'oracle', 'admin', 'postgres', 'ftp', and 'test' indicates a brute force attack. The fact that the attacker is using a specific port (60022) and protocol (ssh2) further supports this conclusion.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 203.0.113.10 from accessing the system.
+- Implement rate limiting for SSH login attempts to prevent brute force attacks.
+- Monitor the system for further suspicious activity.
+- Update the system's SSH configuration to enforce strong authentication and authorization.
+
+
+================================================================================
+Event ID: 12
+Source: auth
+
+AI Analysis:
+
+Summary:
+An SSH brute force attack is being attempted from IP address 203.0.113.200. The attacker is trying to gain access to the system by attempting to log in with invalid usernames. This activity is likely a malicious attempt to compromise the system.
+
+Why the activity is suspicious:
+The repeated failed login attempts from the same IP address suggest a brute force attack. The attacker is trying multiple usernames, which is a common tactic used in these types of attacks. The fact that the attacker is using a known SSH port (32211) and protocol (ssh2) also suggests a malicious intent.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 203.0.113.200 from accessing the system.
+- Implement rate limiting on SSH login attempts to prevent brute force attacks.
+- Monitor the system for any further suspicious activity.
+- Consider implementing a SSH key-based authentication system to reduce the risk of brute force attacks.
+
+
+================================================================================
+Event ID: 13
+Source: auth
+
+AI Analysis:
+
+Summary:
+An SSH brute force attack is being attempted from IP address 203.0.113.55. The attacker is trying to gain access to the system by attempting to log in with invalid usernames. This activity is likely a malicious attempt to compromise the system.
+
+Why the activity is suspicious:
+The repeated failed login attempts from the same IP address suggest a brute force attack. The attacker is trying multiple usernames, which is a common tactic used in these types of attacks. The fact that the attacker is using a known SSH port (51234) also raises suspicions.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 203.0.113.55 from accessing the system.
+- Implement rate limiting on SSH login attempts to prevent brute force attacks.
+- Monitor the system for any further suspicious activity.
+- Consider implementing a SSH key-based authentication system to reduce the risk of brute force attacks.
+
+
+================================================================================
+Event ID: 14
+Source: auth
+
+AI Analysis:
+
+Summary:
+An SSH brute force attack is being attempted from IP address 45.33.12.90 against multiple user accounts. The attack is ongoing, with multiple failed login attempts within a short period. This activity may indicate a malicious actor attempting to gain unauthorized access to the system.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves multiple failed login attempts within a short period, which is a common indicator of a brute force attack. The attacker is attempting to guess multiple user account credentials, which could compromise system security. The fact that the attacker is using a different port number (42311 and 42312) may indicate an attempt to evade detection.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 45.33.12.90 from accessing the system.
+- Implement rate limiting on SSH login attempts to prevent brute force attacks.
+- Monitor system logs for further suspicious activity.
+- Consider implementing a SSH key-based authentication system to reduce the risk of brute force attacks.
+
+
+================================================================================
+Event ID: 15
+Source: access
+
+AI Analysis:
+
+Summary:
+An IP address (185.199.110.22) is scanning the web server, attempting to identify potential vulnerabilities. The IP address is using the sqlmap tool, which is commonly used for web application vulnerability scanning. The scans are targeting various PHP files.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves an external IP address scanning the web server using a tool designed for vulnerability scanning. The scans are targeting specific PHP files, which may indicate an attempt to identify potential SQL injection vulnerabilities. The repeated 404 and 500 status codes suggest that the scans are not legitimate user traffic.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Block the IP address (185.199.110.22) from accessing the web server.
+- Review the web server logs for any potential vulnerabilities.
+- Update the web server software and plugins to the latest versions.
+- Implement additional security measures to prevent future SSRF attacks.
+
+
+================================================================================
+Event ID: 16
+Source: access
+
+AI Analysis:
+
+Summary:
+The event indicates possible web scanning or probing from IP address 192.168.1.150, attempting to access various directories and files on the system. The IP address is attempting to access sensitive directories such as admin, login, and phpmyadmin. The activity is likely a reconnaissance attempt to identify vulnerabilities.
+
+Why the activity is suspicious:
+The IP address is attempting to access multiple sensitive directories and files, which could indicate a reconnaissance attempt to identify vulnerabilities. The use of a generic user agent string ("Mozilla/5.0") may be an attempt to evade detection. The IP address is also attempting to access directories that are not typically accessible to the public.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Block IP address 192.168.1.150 from accessing the system.
+- Investigate the system for any potential vulnerabilities that may have been identified by the IP address.
+- Review the system's access controls to ensure that sensitive directories and files are properly secured.
+- Consider implementing additional security measures to prevent future reconnaissance attempts.
+
+
+================================================================================
+Event ID: 17
+Source: access
+
+AI Analysis:
+
+Summary:
+A potential web scanning or probing activity has been detected from IP address 198.51.100.77, targeting various administrative paths on the system. The activity appears to be a series of GET requests with a 404 status code, indicating that the requested resources do not exist. This behavior may be indicative of reconnaissance or scanning activity.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves a series of targeted GET requests to administrative paths, which may be indicative of reconnaissance or scanning activity. The use of a generic User-Agent string ("Mozilla/5.0") may be an attempt to evade detection. The fact that all requests result in a 404 status code suggests that the attacker is not attempting to exploit any specific vulnerability, but rather gathering information about the system.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Investigate the source IP address 198.51.100.77 to determine its origin and potential malicious intent.
+- Review system logs for any potential vulnerabilities or misconfigurations that may have been exploited.
+- Implement additional security measures to prevent similar scanning or probing activities in the future.
+- Consider blocking the source IP address temporarily or permanently to prevent further activity.
+
+
+================================================================================
+Event ID: 18
+Source: access
+
+AI Analysis:
+
+Summary:
+The event indicates possible web scanning or probing from an IP address (198.51.100.99) attempting to access sensitive directories on a web server. The IP address is making repeated GET requests to various directories, including admin, wp-admin, phpmyadmin, and server-status. The requests are being denied with 404 or 403 status codes.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves repeated attempts to access sensitive directories on a web server. The IP address is using a generic user agent (Mozilla/5.0) and is making GET requests to directories that are commonly used for administrative purposes. The fact that the requests are being denied suggests that the IP address may be attempting to identify vulnerabilities in the web server.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Investigate the IP address (198.51.100.99) to determine its origin and potential malicious intent.
+- Review the web server's configuration to ensure that sensitive directories are properly secured.
+- Consider implementing additional security measures, such as rate limiting or IP blocking, to prevent similar attacks in the future.
+- Monitor the web server's logs for any further suspicious activity.
+
+
+================================================================================
+Event ID: 19
+Source: access
+
+AI Analysis:
+
+Summary:
+The event indicates possible web scanning or probing from an IP address (203.0.113.10) using the curl/7.68.0 agent. The IP attempted to access several common web application paths, including admin.php, wp-login.php, xmlrpc.php, and shell. These attempts were unsuccessful, resulting in 404 status codes.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves an IP address attempting to access common web application paths, which could be indicative of a reconnaissance or scanning activity. The use of curl/7.68.0 agent suggests a scripted or automated attempt to access these paths. The fact that all attempts resulted in 404 status codes does not necessarily rule out malicious activity.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Investigate the IP address (203.0.113.10) for any other suspicious activity.
+- Review the web server logs for any other potential security incidents.
+- Consider blocking the IP address temporarily to prevent further scanning activity.
+- Update the web server configuration to prevent access to sensitive paths.
+
+
+================================================================================
+Event ID: 20
+Source: access
+
+AI Analysis:
+
+Summary:
+A possible web scanning or probing activity has been detected from IP address 203.0.113.200, attempting to access various admin directories on the system. The activity appears to be a series of GET requests with a 404 status code, indicating that the directories do not exist. This behavior may be indicative of reconnaissance or scanning activity.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves a series of GET requests to specific directories, which may be indicative of reconnaissance or scanning activity. The use of a generic user agent string ("Mozilla/5.0") may be an attempt to evade detection. The fact that all requests result in a 404 status code suggests that the IP address is probing the system for vulnerabilities.
+
+MITRE Technique:
+- ID: T1190
+- Name: Server-Side Request Forgery (SSRF)
+
+Recommended Actions:
+- Investigate the IP address 203.0.113.200 to determine its origin and potential malicious intent.
+- Review system logs for any potential vulnerabilities or weaknesses that may have been exploited.
+- Implement additional security measures to prevent similar probing activities in the future.
+- Consider blocking the IP address 203.0.113.200 to prevent further access attempts.
+
+
+================================================================================
+Event ID: 21
+Source: access
+
+AI Analysis:
+
+Summary:
+The event indicates suspicious tool-based probing from an IP address 203.0.113.10, which is attempting to access various web pages on the system. The probing includes attempts to access common web application directories and files. This activity may be indicative of a reconnaissance phase by an attacker.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves a tool (curl) being used to probe the system for potential vulnerabilities. The IP address 203.0.113.10 is attempting to access various web pages, including common web application directories and files, which may be indicative of a reconnaissance phase by an attacker. The fact that the IP address is using a tool to probe the system suggests a level of sophistication and intent that is not typical of benign activity.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 203.0.113.10 from accessing the system.
+- Review the system's web application directories and files to ensure they are secure and not vulnerable to exploitation.
+- Implement additional security measures to prevent similar probing attempts in the future.
+- Investigate the source of the IP address 203.0.113.10 to determine if it is associated with any known malicious activity.
+
+
+================================================================================
+Event ID: 22
+Source: access
+
+AI Analysis:
+
+Summary:
+Suspicious activity detected from IP address 185.199.110.22, which is using the sqlmap tool to probe the system. The activity includes GET requests with malicious parameters, indicating potential SQL injection attempts. Further investigation is required to determine the scope of the attack.
+
+Why the activity is suspicious:
+The activity is suspicious because it involves a known SQL injection tool (sqlmap) making multiple GET requests with malicious parameters to the system. The requests include attempts to inject SQL code, such as the 'OR 1=1' condition, which is a common technique used in SQL injection attacks. The tool is also attempting to access sensitive files, such as login.php and config.php.
+
+MITRE Technique:
+- ID: T1190
+- Name: Exploit Public-Facing Application
+
+Recommended Actions:
+- Block the IP address 185.199.110.22 to prevent further attacks.
+- Review the system's logs to determine the scope of the attack and identify any potential vulnerabilities.
+- Run a vulnerability scan to identify any weaknesses in the system that could be exploited by the attacker.
+- Implement additional security measures, such as web application firewalls and intrusion detection systems, to prevent similar attacks in the future.
