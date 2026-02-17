@@ -1,0 +1,320 @@
+[
+  {
+    "timestamp": "2018-03-24T14:37:19.037299-0600",
+    "flow_id": 928532049924531,
+    "pcap_cnt": 169577,
+    "event_type": "alert",
+    "src_ip": "0.0.0.0",
+    "src_port": 26078,
+    "dest_ip": "10.47.8.150",
+    "dest_port": 22,
+    "proto": "TCP",
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2001219,
+      "rev": 20,
+      "signature": "ET SCAN Potential SSH Scan",
+      "category": "Attempted Information Leak",
+      "severity": 2
+    },
+    "flow": {
+      "pkts_toserver": 1,
+      "pkts_toclient": 0,
+      "bytes_toserver": 74,
+      "bytes_toclient": 0,
+      "start": "2018-03-24T14:37:19.037299-0600"
+    }
+  },
+  {
+    "timestamp": "2018-03-23T15:58:25.400773-0600",
+    "flow_id": 69629883037514,
+    "event_type": "alert",
+    "src_ip": "23.75.4.57",
+    "src_port": 80,
+    "dest_ip": "10.47.5.152",
+    "dest_port": 52691,
+    "proto": "TCP",
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2012692,
+      "rev": 6,
+      "signature": "ET POLICY Microsoft user-agent automated process response to automated request",
+      "category": "A Network Trojan was detected",
+      "severity": 1
+    },
+    "http": {
+      "hostname": "www.microsoft.com",
+      "url": "/",
+      "http_user_agent": "Microsoft Windows Network Diagnostics",
+      "http_content_type": "text/html",
+      "http_method": "GET",
+      "protocol": "HTTP/1.1",
+      "status": 200,
+      "length": 1020
+    },
+    "app_proto": "http",
+    "flow": {
+      "pkts_toserver": 8,
+      "pkts_toclient": 6,
+      "bytes_toserver": 716,
+      "bytes_toclient": 2928,
+      "start": "2018-03-23T15:58:09.112458-0600"
+    }
+  },
+  {
+    "timestamp": "2018-03-23T13:58:24.603886-0600",
+    "flow_id": 254433264977483,
+    "pcap_cnt": 6935,
+    "event_type": "alert",
+    "src_ip": "10.128.0.241",
+    "src_port": 40005,
+    "dest_ip": "10.47.8.20",
+    "dest_port": 80,
+    "proto": "TCP",
+    "tx_id": 0,
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2024121,
+      "rev": 4,
+      "signature": "ET EXPLOIT NETGEAR WNR2000v5 hidden_lang_avi Stack Overflow (CVE-2016-10174)",
+      "category": "Attempted Administrator Privilege Gain",
+      "severity": 1
+    },
+    "http": {
+      "hostname": "10.47.8.20",
+      "url": "/apply_noauth.cgi?/lang_check.html%20timestamp=48693124",
+      "http_user_agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)",
+      "http_content_type": "text/html",
+      "http_method": "POST",
+      "protocol": "HTTP/1.1",
+      "status": 404,
+      "length": 248
+    },
+    "app_proto": "http",
+    "flow": {
+      "pkts_toserver": 7,
+      "pkts_toclient": 10,
+      "bytes_toserver": 1434,
+      "bytes_toclient": 3358,
+      "start": "2018-03-23T13:58:24.575051-0600"
+    }
+  },
+  {
+    "timestamp": "2018-03-23T14:48:46.843722-0600",
+    "flow_id": 646613369275054,
+    "pcap_cnt": 2125370,
+    "event_type": "alert",
+    "src_ip": "10.128.0.218",
+    "src_port": 45214,
+    "dest_ip": "10.47.6.150",
+    "dest_port": 23,
+    "proto": "TCP",
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2024194,
+      "rev": 1,
+      "signature": "ET EXPLOIT Cisco Catalyst Remote Code Execution (CVE-2017-3881)",
+      "category": "Attempted User Privilege Gain",
+      "severity": 1
+    },
+    "flow": {
+      "pkts_toserver": 7,
+      "pkts_toclient": 4,
+      "bytes_toserver": 666,
+      "bytes_toclient": 252,
+      "start": "2018-03-23T14:48:46.836270-0600"
+    }
+  },
+  {
+    "timestamp": "2018-03-23T12:09:00.684377-0600",
+    "flow_id": 1676926003185073,
+    "pcap_cnt": 730813,
+    "event_type": "alert",
+    "src_ip": "10.47.8.151",
+    "src_port": 445,
+    "dest_ip": "10.128.0.207",
+    "dest_port": 46564,
+    "proto": "TCP",
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2024216,
+      "rev": 1,
+      "signature": "ET EXPLOIT Possible DOUBLEPULSAR Beacon Response",
+      "category": "A Network Trojan was detected",
+      "severity": 1
+    },
+    "app_proto": "smb",
+    "flow": {
+      "pkts_toserver": 14,
+      "pkts_toclient": 9,
+      "bytes_toserver": 1842,
+      "bytes_toclient": 1389,
+      "start": "2018-03-23T12:09:00.656817-0600"
+    }
+  },
+  {
+    "timestamp": "2018-03-24T15:57:48.703262-0600",
+    "flow_id": 1848239483263866,
+    "pcap_cnt": 10561,
+    "event_type": "alert",
+    "src_ip": "88.99.217.110",
+    "src_port": 9001,
+    "dest_ip": "10.47.43.10",
+    "dest_port": 58689,
+    "proto": "TCP",
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2523258,
+      "rev": 3468,
+      "signature": "ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 630",
+      "category": "Misc Attack",
+      "severity": 2
+    },
+    "vars": {
+      "flowbits": {
+        "ET.TorIP": true
+      }
+    },
+    "flow": {
+      "pkts_toserver": 2,
+      "pkts_toclient": 1,
+      "bytes_toserver": 132,
+      "bytes_toclient": 66,
+      "start": "2018-03-24T15:57:48.531322-0600"
+    }
+  },
+  {
+    "timestamp": "2018-03-24T16:04:39.829431-0600",
+    "flow_id": 2122842539232115,
+    "pcap_cnt": 69543,
+    "event_type": "alert",
+    "src_ip": "88.99.70.107",
+    "src_port": 9001,
+    "dest_ip": "10.47.44.10",
+    "dest_port": 51157,
+    "proto": "TCP",
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2523260,
+      "rev": 3468,
+      "signature": "ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 631",
+      "category": "Misc Attack",
+      "severity": 2
+    },
+    "vars": {
+      "flowbits": {
+        "ET.TorIP": true
+      }
+    },
+    "flow": {
+      "pkts_toserver": 2,
+      "pkts_toclient": 1,
+      "bytes_toserver": 132,
+      "bytes_toclient": 66,
+      "start": "2018-03-24T16:04:39.658291-0600"
+    }
+  },
+  {
+    "timestamp": "2018-03-24T17:00:49.563613-0600",
+    "flow_id": 1636442008782067,
+    "pcap_cnt": 569030,
+    "event_type": "alert",
+    "src_ip": "89.163.225.145",
+    "src_port": 443,
+    "dest_ip": "10.47.43.10",
+    "dest_port": 49725,
+    "proto": "TCP",
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2523264,
+      "rev": 3468,
+      "signature": "ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 633",
+      "category": "Misc Attack",
+      "severity": 2
+    },
+    "vars": {
+      "flowbits": {
+        "ET.TorIP": true
+      }
+    },
+    "flow": {
+      "pkts_toserver": 2,
+      "pkts_toclient": 1,
+      "bytes_toserver": 132,
+      "bytes_toclient": 66,
+      "start": "2018-03-24T17:00:49.394483-0600"
+    }
+  },
+  {
+    "timestamp": "2018-03-24T18:32:23.838190-0600",
+    "flow_id": 7627561490425,
+    "pcap_cnt": 841754,
+    "event_type": "alert",
+    "src_ip": "89.221.214.243",
+    "src_port": 443,
+    "dest_ip": "10.47.21.82",
+    "dest_port": 49974,
+    "proto": "TCP",
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2523266,
+      "rev": 3468,
+      "signature": "ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 634",
+      "category": "Misc Attack",
+      "severity": 2
+    },
+    "vars": {
+      "flowbits": {
+        "ET.TorIP": true
+      }
+    },
+    "flow": {
+      "pkts_toserver": 2,
+      "pkts_toclient": 1,
+      "bytes_toserver": 132,
+      "bytes_toclient": 66,
+      "start": "2018-03-24T18:32:23.645113-0600"
+    }
+  },
+  {
+    "timestamp": "2018-03-24T16:00:28.228131-0600",
+    "flow_id": 1227350431536288,
+    "pcap_cnt": 240143,
+    "event_type": "alert",
+    "src_ip": "89.46.100.71",
+    "src_port": 443,
+    "dest_ip": "10.47.24.80",
+    "dest_port": 64863,
+    "proto": "TCP",
+    "alert": {
+      "action": "allowed",
+      "gid": 1,
+      "signature_id": 2523276,
+      "rev": 3468,
+      "signature": "ET TOR Known Tor Relay/Router (Not Exit) Node Traffic group 639",
+      "category": "Misc Attack",
+      "severity": 2
+    },
+    "vars": {
+      "flowbits": {
+        "ET.TorIP": true
+      }
+    },
+    "flow": {
+      "pkts_toserver": 2,
+      "pkts_toclient": 1,
+      "bytes_toserver": 132,
+      "bytes_toclient": 66,
+      "start": "2018-03-24T16:00:28.038048-0600"
+    }
+  }
+]
